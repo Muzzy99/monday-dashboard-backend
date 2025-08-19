@@ -13,11 +13,11 @@ if (isProduction) {
   console.log('Connecting to Railway MySQL in production...');
   
   pool = mysql.createPool({
-    host: 'mysql.railway.internal',
+    host: 'turntable.proxy.rlwy.net',
     user: 'root',
     password: 'BoJRYIFIddbxEaJiVCxQVGIoBbgYfvXJ',
     database: 'railway',
-    port: 3306,
+    port: 31082,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
